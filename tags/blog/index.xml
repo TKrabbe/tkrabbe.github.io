@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on My new cozy blog</title>
-    <link>http://tkrabbe.github.io/tags/blog/</link>
+    <link>https://tkrabbe.github.io/tags/blog/</link>
     <description>Recent content in blog on My new cozy blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Aug 2021 13:38:54 +0300</lastBuildDate><atom:link href="http://tkrabbe.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Aug 2021 13:38:54 +0300</lastBuildDate><atom:link href="https://tkrabbe.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Мой первый пост</title>
-      <link>http://tkrabbe.github.io/posts/my-first-post/</link>
+      <link>https://tkrabbe.github.io/posts/my-first-post/</link>
       <pubDate>Tue, 17 Aug 2021 13:38:54 +0300</pubDate>
       
-      <guid>http://tkrabbe.github.io/posts/my-first-post/</guid>
+      <guid>https://tkrabbe.github.io/posts/my-first-post/</guid>
       <description>Это должна была быть первая в мире социальная сеть без ботов 😁 . А получился вот этот мой уютный бложик. Получился он не сразу, что случилось до этого сейчас расскажу. Начну с того что я хотел посмотреть как сейчас модно делать сайтики. ФБ использует React значит и я должен его пощупать 😉. Пощупал и получилось вот такое Next.js+SWR+Tailwind+SQlite. Была сделана аутентификация (argon2), авторизация и уровни доступов к подсайтам сделать не успел.</description>
     </item>
     
