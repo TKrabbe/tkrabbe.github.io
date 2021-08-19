@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>Мой первый пост</title>
+<title>Todo</title>
 
 
 
@@ -10,7 +10,7 @@
 <meta name="google-site-verification" content="">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="Это должна была быть первая в мире социальная сеть без ботов  😁 . А получился вот этот мой уютный бложик.">
+<meta name="description" content="">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
@@ -49,10 +49,6 @@
 
 
 
-
-  
-    <script src="/js/toc.js"></script>
-  
 
 
 
@@ -105,11 +101,6 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 </div><div ref="extraContainer" class="extra-container">
     
     
-    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
-
-
-</div>
-    
     <div class="pagination">
         <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
             <i class="material-icons pagination-action-icon">
@@ -127,6 +118,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
         </a>
         
         
+        
+        
     </div>
 </div>
 <div class="single-column-drawer-container" ref="drawer"
@@ -136,11 +129,6 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
             
             
             
-            
-            <div class="toc">
-
-
-</div>
             
         </div>
     </div>
@@ -183,106 +171,41 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
             <div id="content">
 <div ref="streamContainer" class="stream-container">
     <div class="post-list-container post-list-container-shadow">
-        <div class="post">
-            
-            
-            
-                
-            
-
-            <div class="post-head-wrapper"
-                
-                    
-                    
-                    style="background-image: url('http://tkrabbe.github.io/images/notebook.jpg')"
-                    
-                
-            >
-                <div class="post-title">
-                    Мой первый пост
-                    
-                    <div class="post-subtitle">
-                        Это должна была быть первая в мире социальная сеть без ботов  😁 . А получился вот этот мой уютный бложик.
-                    </div>
-                    
-                    <div class="post-meta">
-                        
-                        <time itemprop="datePublished">
-                            2021-08-17 13:38
-                        </time>
-                        
-
-                        
-                            <i class="material-icons" style="">folder</i>
-                                <a href="/categories/todo">Todo</a>
-                                &nbsp;
-                        
-
-                        
-                            <i class="material-icons" style="">label</i>
-                            
-                                <a href="/tags/blog">blog</a>
-                                &nbsp;
-                            
-                                <a href="/tags/todo">todo</a>
-                                &nbsp;
-                            
-                        
-                        
+        <div class="post-item-wrapper post-item-wrapper-no-hover">
+            <div class="post-item post-item-no-gaps">
+                <div class="post-item-info-wrapper">
+                    <div class="post-item-title  post-item-title-small">
+                        <a href="http://tkrabbe.github.io/">My new cozy blog</a> / Todo
                     </div>
                 </div>
             </div>
-            
-            <div class="post-body-wrapper">
-                
-                <div class="post-body" v-pre>
-                
-                    <p>Это должна была быть первая в мире социальная сеть без ботов  😁 . А получился вот этот мой уютный бложик. Получился он не сразу, что случилось до этого сейчас расскажу.
-Начну с того что я хотел посмотреть как сейчас модно делать сайтики. ФБ использует React значит и я должен его пощупать 😉. Пощупал и получилось вот такое Next.js+SWR+Tailwind+SQlite. Была сделана аутентификация (argon2), авторизация и уровни доступов к подсайтам сделать не успел. Еще не работала карма да и еще много чего.</p>
-<p>Почему она была бы первой социальной сетью без ботов? Потому что, во-первых это пафосно звучит, во-вторых получение инвайта должно было быть сделано с помощью Face ID. То есть пользователь чтобы его получить включал камеру и выполнял простые команды а-ля поверни голову на право, поверни налево, улыбнись и тд. Сервис на сервере по видео должен был проверять на фейковость (блуждающие пиксели, пропадающие части лица при переходе из ракурса анфас в профиль, биометрические данные - например на видео может быть зафиксирована пульсация крови под кожей и тд) Я думал над тем чтобы реконструировать и 3d модель из видео. В любом случае создавался бы perceptual hash который бы хранился в базе данных. Когда кто-то другой хотел получить инвайт для него тоже создавался бы такой хэш и сравнивался с тем что в базе. По этому хэшу восстановить лицо нельзя, но можно сравнивать с ним разные лица. Таким образом бы сохранялась приватность лиц приглашенных.</p>
-<p>Сайт был сделан, а когда я начал переводить его на TypeScript мне вдруг в голову пришла мысль - &ldquo;А смогу ли я где-нибудь его бесплатно захостить?&rdquo;. И оказалось что сейчас модно еще serverless и выложить это в Vercel, да бесплатный хостинг для Nextjs был важной причиной по которой я выбрал Nextjs, c sqlite у меня не получится.</p>
-<p>Так как основная цель была самообразование, она была достигнута, а бюджета на поддержку, маркетинг и продвижение там никогда не было.</p>
-<p>Вот скриншот того сайта с коментариями, понятно что они были сгенерированы, как и пользователи</p>
-<p><img src="/futok_comments.jpg" alt="Example image"></p>
-<p>Потому думаю потихоньку допиливать его и когда-нибудь выложить, но у этого домашнего проекта теперь самый низкий приоритет. Мне не нравится документация для JavaScript фреймворков, она устаревает с выходом новой версии, как и конфиги.</p>
-<p>Теперь я займусь проектами на C++, возможно вспомню Haskell, подумывал пощупать Rust.</p>
-<p>Вполне вероятно что здесь появятся и мои эффекты для Davinci Resolve</p>
-<p>На этом заканчиваю этот пост. До новых встреч!</p>
-
-                    
-                    <HR width="100%" id="EOF">
-		    <p style="color:#777;">Last modified on 2021-08-17</p>
-                    
-                </div>
-            </div>
-            
-            
-            <nav class="post-pagination">
-
-                
-                <a class="newer-posts">
-			Next<br>No newer posts.
-                </a>
-                
-                
-                
-                <a class="older-posts">
-			Previous<br>No older posts.
-                </a>
-                
-            </nav>
-            <div class="post-comment-wrapper">
-                
-                <p style="opacity: 0.6" align="center">
-                    <small>Comments Disabled.</small>
-                </p>
-                
-            </div>
-        </div>
-    </div>
+        </div><a href="/posts/my-first-post/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-gaps">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            Мой первый пост
+                        </div>
+                        <div class="post-item-meta">
+    2021-08-17
+    &emsp;
+    
+    
+    
+    &emsp;
+    
 </div>
 
-            </div><div id="single-column-footer">
+                    </div>
+                </div>
+            </div>
+        </a></div>
+</div>
+
+            </div>
+
+
+<div id="single-column-footer">
 Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
 <br>
 Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
@@ -549,9 +472,6 @@ app = new Vue({
             elem.classList.add("table-hover");
         })
 
-        
-        spy();
-        window.addEventListener('scroll', this.debounce(spy, 250, { 'maxWait': 250 }), false);
         
         
     },
