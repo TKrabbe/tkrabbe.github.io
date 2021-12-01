@@ -5,9 +5,28 @@
     <description>Recent content on My new cozy blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Aug 2021 13:38:54 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 01 Dec 2021 04:03:14 +0200</lastBuildDate>
     
         <atom:link href="https://tkrabbe.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Новый вариант для WndProc</title>
+        <link>https://tkrabbe.github.io/posts/i-made-a-new-wndproc/</link>
+        <pubDate>Wed, 01 Dec 2021 04:03:14 +0200</pubDate>
+        
+        <guid>https://tkrabbe.github.io/posts/i-made-a-new-wndproc/</guid>
+        <description>My new cozy blog https://tkrabbe.github.io/posts/i-made-a-new-wndproc/ -&lt;p&gt;Ну что, до этого в интернете было описано 3 метода создания WndProc окна в Windows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;с помощью static функции&lt;/li&gt;
+&lt;li&gt;с помощью ассемблерного хака как в atl thunk&lt;/li&gt;
+&lt;li&gt;с помощью установки свойств она SetProp или SetWindowLong(GWLP_USERDATA)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Оказывается можно сделать и 4м способом, с помощью TLS и лямбд. Не знаю кто-нибудь пытался это сделать до меня, но на мой взгляд он самый красивый, конечно потому что его придумал я :3
+Думаю чуть попозже оформить это как библиотеку для работы с win32 api и выложить тут. Если будет время&lt;/p&gt;
+- https://tkrabbe.github.io/posts/i-made-a-new-wndproc/ - </description>
+        </item>
     
     
     
